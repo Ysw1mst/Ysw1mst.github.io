@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Suyeong Yang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "ROK MarineCorps, RA of AIONE LAB"
+  location         : "DJU Univ, Sejeong. Korea"
+  email            : ysw1mst@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
