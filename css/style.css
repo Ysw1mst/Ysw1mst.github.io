@@ -8,7 +8,7 @@ input[id="menuicon"] + label {
     height: 40px;
     position: relative;
     cursor: pointer;
-    margin: 30px;
+    margin: 50px; /* 여기서 모서리에서 100px만큼 여백 추가 */
 }
 
 input[id="menuicon"] + label span {
@@ -17,8 +17,8 @@ input[id="menuicon"] + label span {
     width: 100%;
     height: 5px;
     border-radius: 30px;
-    background-color: snow;
-    transition: all 0.35s;
+    background-color: lightgray;
+    transition: all .35s;
 }
 
 input[id="menuicon"] + label span:nth-child(1) {
