@@ -1,5 +1,6 @@
 input[id="menuicon"] {
     display: none;
+    z-index: 2;
 }
 
 input[id="menuicon"] + label {
@@ -7,9 +8,9 @@ input[id="menuicon"] + label {
     display: block;
     width: 60px;
     height: 40px;
-    position: relative;
-
-    margin: 50px; /* 여기서 모서리에서 100px만큼 여백 추가 */
+    position:fixed;
+    margin: 50px;
+    z-index: 3;
 }
 
 input[id="menuicon"] + label span {
@@ -47,4 +48,19 @@ input[id="menuicon"]:checked + label span:nth-child(2) {
 input[id="menuicon"]:checked + label span:nth-child(3) {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
+}
+
+div[class = "sidebar"] {
+    width:400px;
+    height:100%;
+    background-color:white;
+    position:fixed;
+    top:0;
+    left:-400px;
+    z-index:1;
+    transition:all .35s;
+}
+
+input[id="menuicon"]:checked + label + div {
+    left:0
 }
