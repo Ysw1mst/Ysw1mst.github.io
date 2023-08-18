@@ -5,13 +5,13 @@
     <style>
         /* 배경 이미지 스타일 */
         body {
-            margin: 0; /* 바디의 기본 마진 제거 */
-            padding: 0; /* 바디의 기본 패딩 제거 */
+            margin: 0;
+            padding: 0;
             background-image: url('img/study00.gif');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            background-attachment: fixed; /* 배경 이미지를 고정시킴 */
+            background-attachment: fixed;
         }
 
         /* 반투명한 배경 스타일 */
@@ -21,9 +21,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            /* 반투명 검정 배경 */
             background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1; /* 다른 콘텐츠 위에 배치 */
+            z-index: 1;
         }
 
         /* 문구 스타일 */
@@ -35,8 +34,18 @@
             color: seashell;
             font-size: 50px;
             text-align: center;
-            /* 텍스트를 반투명 배경 위에 배치함 */
             z-index: 2;
+        }
+
+        /* 푸터 스타일 */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
@@ -47,7 +56,9 @@
     <p>Welcome to Ysw1mst Space</p>
 </div>
 
-
+<div class="footer">
+    <p>Ysw1m_st 2023. 08. 18<br>Design reference To @Inpa Dev
+</div>
 
 </body>
 </html>
