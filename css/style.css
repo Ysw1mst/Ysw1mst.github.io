@@ -66,16 +66,24 @@ body {
     z-index: 2;
     opacity: 0;
     animation-fill-mode: forwards;
-    animation: fadeInUp 2.5s;
+    animation: fadeInUp 3.0s;
 }
 
 .text#secondText {
-    animation-delay: 2.5s;
+    animation-delay: 3.0s;
 }
 
 .text#thirdText {
-    animation-delay: 5s;
+    animation-delay: 6s;
 }
+.text#fourthText {
+    animation-delay: 9.0s;
+}
+
+.text#fifthText {
+    animation-delay: 12.0s;
+}
+
 
 
 input[id="menuicon"] {

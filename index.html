@@ -14,19 +14,29 @@
    <body>
         <script src="javascript/indexmain.js"></script>
         <div class="overlay"></div>
-        <div class="text" id="firstText">
-            <p>Welcome to <br>
-                Ysw1m_st Space</p>
-        </div>
         <div class="text" id="secondText">
+            <p>Welcome to <br>
+                Ysw1m_st Space!</p>
+        </div>
+        <div class="text" id="thirdText">
             <p>ようこそ!<br>
                 Ysw1m_st の<br>
                 くうかんへ!</p>
         </div>
-        <div class="text" id="thirdText">
+        <div class="text" id="firstText">
             <p>어서오세요.
                 <br>Ysw1m_st의 공간입니다.</p>
         </div>
+        <div class="text" id="fourthText">
+            <p>Bienvenidos.
+                <br>Es un espacio de Ysw1m_st.</p>
+        </div>
+        <div class="text" id="fifthText">
+            <p>很高兴见到你。
+                <br>Ysw1m_st的空间。</p>
+        </div>
+
+
 
 
     <div class="footer">
@@ -42,7 +52,8 @@
         <span></span>
         <span></span>
     </label>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+       </div>
 
 
 <script>
@@ -50,17 +61,17 @@ function startAnimation() {
     const textElements = document.querySelectorAll('.text');
 
     textElements.forEach((element, index) => {
-        element.style.animation = 'none'; // Reset animation
-        void element.offsetWidth; // Trigger reflow to restart animation
-        element.style.animation = null; // Remove inline style
+        element.style.animation = 'none';
+        void element.offsetWidth;
+        element.style.animation = null;
     });
 }
 
-// Call the startAnimation function to start the animation loop
+
 startAnimation();
 
-// You can repeat this animation loop at a certain interval if needed
-setInterval(startAnimation, 7500); // Repeat every 7.5 seconds (2.5s + 2.5s + 2.5s)
+
+setInterval(startAnimation, 15000);
 
 </script>
 
