@@ -24,8 +24,8 @@
                 くうかんへ!</p>
         </div>
         <div class="text" id="thirdText">
-            <p>어서오세요!
-                <br>Ysw1m_st의 블로그입니다!</p>
+            <p>어서오세요.
+                <br>Ysw1m_st의 공간입니다.</p>
         </div>
 
 
@@ -44,6 +44,25 @@
     </label>
     <div class="sidebar"></div>
 
+
+<script>
+function startAnimation() {
+    const textElements = document.querySelectorAll('.text');
+
+    textElements.forEach((element, index) => {
+        element.style.animation = 'none'; // Reset animation
+        void element.offsetWidth; // Trigger reflow to restart animation
+        element.style.animation = null; // Remove inline style
+    });
+}
+
+// Call the startAnimation function to start the animation loop
+startAnimation();
+
+// You can repeat this animation loop at a certain interval if needed
+setInterval(startAnimation, 7500); // Repeat every 7.5 seconds (2.5s + 2.5s + 2.5s)
+
+</script>
 
 </body>
 </html>
