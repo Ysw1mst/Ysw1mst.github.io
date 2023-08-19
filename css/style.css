@@ -83,7 +83,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: seashell;
-    font-size: 75px;
+    font-size: 64px;
     text-align: center;
     z-index: 2;
     animation: fadeInUp 2.5s;
