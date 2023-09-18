@@ -4,6 +4,7 @@
 
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body {
             background-image: url('img/study00.gif');
@@ -14,21 +15,31 @@
    <body>
         <script src="javascript/indexmain.js"></script>
         <div class="overlay"></div>
-        <div class="text" id="firstText">
-            <p>Welcome to Ysw1m_st Space</p>
-        </div>
         <div class="text" id="secondText">
-            <p>ようこそ! Ysw1m_stの くうかんへ!</p>
+            <p>Welcome to <br>
+                Ysw1m_st Space!</p>
         </div>
         <div class="text" id="thirdText">
-            <p>어서오세요! Ysw1m_st의 블로그입니다!</p>
+            <p>ようこそ!<br>
+                Ysw1m_st の<br>
+                くうかんへ!</p>
         </div>
+        <div class="text" id="firstText">
+            <p>어서오세요.
+                <br>Ysw1m_st의 공간입니다.</p>
+        </div>
+        <div class="text" id="fourthText">
+            <p>Bienvenidos.
+                <br>Es un espacio de Ysw1m_st.</p>
+        </div>
+
+
+
 
 
     <div class="footer">
         <p>Ysw1m_st 2023. 08. 18<br>
         Contact Address ysw1mst@naver.com<br>
-        Design reference To @Inpa Dev
         </p>
     </div>
 
@@ -38,8 +49,39 @@
         <span></span>
         <span></span>
     </label>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+    <ul>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">HTML / CSS</a></li>
+        <li><a href="#">CS</a></li>
+        <li><a href="#">JAVA</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">LIFE</a></li>
+        <li><a href="#">Git Hub</a></li>
+        <li><a href="#">Instargram</a></li>
+        <li><a href="#">Guest Book</a></li>
+   </ul>
+       </div>
 
+
+<script>
+function startAnimation() {
+    const textElements = document.querySelectorAll('.text');
+
+    textElements.forEach((element, index) => {
+        element.style.animation = 'none';
+        void element.offsetWidth;
+        element.style.animation = null;
+    });
+}
+
+
+startAnimation();
+
+
+setInterval(startAnimation, 12000);
+
+</script>
 
 </body>
 </html>
