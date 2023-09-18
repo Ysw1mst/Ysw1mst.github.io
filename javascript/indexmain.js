@@ -2,13 +2,12 @@ const texts = document.querySelectorAll(".text");
 let currentIndex = 0;
 
 function showText(index) {
-    texts.forEach((text, i) => {
-        if (i === index) {
-            text.style.opacity = 1;
-        } else {
-            text.style.opacity = 0;
-        }
-    });
+    // 현재 텍스트 표시
+    texts[index].style.opacity = 1;
+
+    // 이전 텍스트 숨김
+    const prevIndex = (index === 0) ? texts.length - 1 : index - 1;
+    texts[prevIndex].style.opacity = 0;
 }
 
 function loopTextAnimation() {
