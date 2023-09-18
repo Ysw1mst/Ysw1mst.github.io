@@ -147,13 +147,9 @@ ul {
 }
 
 .text#thirdText {
-<<<<<<< HEAD
-    animation-delay: 5s;
-
-}
 
 
-=======
+
     animation-delay: 6s;
 }
 .text#fourthText {
@@ -163,9 +159,8 @@ ul {
 
 
 li:first-child {
-    margin-top: 150px; /* 각 메뉴 항목 위쪽에 100px 여백 추가 */
+    margin-top: 150px;
 }
->>>>>>> origin/main
 
 
 
